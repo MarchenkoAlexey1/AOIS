@@ -88,7 +88,7 @@ void TruthTable::FillingOutTheTable(std::string postfix_formula)
 					else solution.top() = 0;
 					continue;
 				case '>':
-					if (buffer == 1 && solution.top() == 0) solution.top() = 0;
+					if (buffer == 0 && solution.top() == 1) solution.top() = 0;
 					else solution.top() = 1;
 					continue;
 				case '~':
